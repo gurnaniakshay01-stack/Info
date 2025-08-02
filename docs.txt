@@ -1,0 +1,145 @@
+1. Project Scope
+Objective: Redesign the existing King Sukh Guest House website to improve aesthetics, user engagement, and responsiveness.
+
+Key Goals:
+
+Modernize the visual design with a clean and welcoming look.
+
+Implement responsive design for seamless experience on all devices.
+
+Include interactive elements like dark mode toggle and smooth navigation.
+
+Maintain brand consistency with logo, colors, and theme.
+
+Features Delivered:
+
+Responsive navigation with desktop and mobile menu.
+
+Dark mode toggle button.
+
+Hero section with background image and call-to-action button.
+
+Room listings with images and descriptions.
+
+Contact form with validation and submission feedback.
+
+Footer with copyright.
+
+2. Design Decisions
+Typeface: Used Google Fonts ‘Inter’ for a modern, readable look.
+
+Color Palette: Light theme with blues and grays, with a complementary dark mode palette using darker backgrounds and lighter text for eye comfort.
+
+Layout:
+
+Fixed header with navigation for easy access.
+
+Grid-based room layout for clear visual hierarchy.
+
+Spacious sections with padding for better readability.
+
+Animations: Added subtle fade-in for hero section and hover effects for interactive elements to enhance user engagement.
+
+Mobile First: Used Tailwind CSS utility classes to ensure a responsive design that adapts to mobile screens and scales up for desktops.
+
+3. Technical Details
+Tech Stack:
+
+HTML5 semantic structure.
+
+Tailwind CSS (via CDN) for styling.
+
+Vanilla JavaScript for interactivity (dark mode toggle, mobile menu toggle).
+
+Dark Mode Implementation:
+
+Custom CSS toggling .dark class on the <body> element.
+
+Separate color variables and overrides for dark backgrounds and text.
+
+Performance:
+
+Optimized images via Unsplash source URLs.
+
+Minimal JavaScript for fast loading.
+
+Utilized CDN-delivered CSS for caching benefits.
+
+Accessibility:
+
+Buttons and links with clear labels.
+
+Keyboard-accessible menu toggles.
+
+Responsive layout ensuring usability on all devices.
+
+4. Maintenance & Updates Instructions
+Adding Content:
+
+Update room details by editing the room cards in the “Rooms” section.
+
+Modify text in “About” and “Contact” sections directly in index.html.
+
+Styling:
+
+Modify colors, fonts, or spacing in style.css.
+
+Add new Tailwind utility classes in the HTML as needed.
+
+JavaScript:
+
+Keep the dark mode and menu toggle logic inside the <script> block in index.html.
+
+Add new scripts carefully to avoid conflicts.
+
+Deployment:
+
+Host the static files (index.html and style.css) on any web server or platforms like GitHub Pages, Netlify, or Vercel.
+
+Backups:
+
+Keep backups of both files regularly to avoid data loss.
+
+Version Control:
+
+Use Git for tracking changes.
+
+Commit descriptive messages when updating design or features.
+
+5. Challenges & Solutions
+Dark Mode Compatibility:
+
+Challenge: Tailwind CDN version does not support built-in dark mode toggling.
+
+Solution: Implemented a custom .dark class toggling on the <body> with manual CSS overrides.
+
+Responsive Menu:
+
+Challenge: Making a user-friendly mobile menu toggle.
+
+Solution: Created a simple JavaScript toggle to show/hide menu links on smaller screens.
+
+Performance Optimization:
+
+Challenge: Loading high-res images without slowing the site.
+
+Solution: Used Unsplash source URLs with moderate resolution and background overlay to maintain readability.
+
+Accessibility:
+
+Challenge: Ensuring the website works well for keyboard users.
+
+Solution: Added clear aria-labels on buttons and ensured interactive elements respond to keyboard input.
+
+6. Future Improvements (Optional)
+Implement backend form submission for the contact form.
+
+Add multilingual support for wider accessibility.
+
+Integrate booking APIs for real-time reservations.
+
+Add testimonials or review sections.
+
+Use a CSS preprocessor or build system for more scalable styles.
+
+Thank you for reviewing the King Sukh Guest House website redesign project!

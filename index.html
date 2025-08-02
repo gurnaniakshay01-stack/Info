@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="transition duration-300">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Sukh Guest House</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    
+<body class="bg-sandlight text-dark transition duration-300 font-inter">
+  <!-- Header -->
+  <header class="bg-white dark:bg-darknav shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="font-playfair text-3xl">King Sukh Guest House</h1>
+      <nav class="flex items-center space-x-4">
+        <div class="hidden md:flex space-x-4">
+          <a href="#about" class="hover:text-maroon">About</a>
+          <a href="#rooms" class="hover:text-maroon">Rooms</a>
+          <a href="#gallery" class="hover:text-maroon">Gallery</a>
+          <a href="#contact" class="hover:text-maroon">Contact</a>
+        </div>
+        <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 border rounded text-sm hover:bg-sandhover dark:hover:bg-gray-600">🌙</button>
+      </nav>
+      <button class="md:hidden" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white dark:bg-darknav">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#rooms" class="block py-2">Rooms</a>
+      <a href="#gallery" class="block py-2">Gallery</a>
+      <a href="#contact" class="block py-2">Contact</a>
+      <button onclick="toggleDarkMode()" class="block w-full text-left py-2 border-t mt-2">Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-cover bg-center h-[80vh]" style="background-image:url('asserts/header.jpg');">
+    <div class="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
+      <div class="text-center text-white p-8 rounded hero-fade max-w-2xl">
+        <h2 class="text-5xl font-playfair mb-4">Welcome to King Sukh Guest House</h2>
+        <p class="mb-6 text-lg">Experience authentic Rajasthani hospitality in the heart of Jaipur.</p>
+        <a href="#contact" class="btn-maroon">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 max-w-5xl mx-auto px-4">
+    <div class="md:flex items-center gap-6">
+      <div class="md:w-1/2">
+        <img src="asserts/out.jpg" alt="Guesthouse" class="rounded shadow-lg">
+      </div>
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-playfair mb-4">About Us</h3>
+        <h2>The Best Holidays Start Here! <hr> </h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay. <br><br>
+        </p>
+        <h4>
+        <a href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA">Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</a>
+        </h4>
+        <h4>
+            <a href="tel:+911234567890"> Contact us: +91 1234567890 </a>
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section id="rooms" class="bg-sandlight dark:bg-darknav py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-playfair text-center mb-10 section_subheader" >Our Rooms <hr> </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Sample Room Card -->
+        <div class="room-card bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?hotelroom,jaipur" alt="Deluxe Room" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold">Deluxe Room</h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Queen bed, garden view, ₹1500/night</p>
+            <a href="#contact" class="btn-maroon mt-4 inline-block">Book Now</a>
+          </div>
+        </div>
+        <!-- repeat for other rooms -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16">
+    <h3 class="text-3xl font-playfair text-center mb-8">Gallery</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+      <img src="https://source.unsplash.com/400x400/?jaipur,garden" class="rounded shadow">
+      <img src="https://source.unsplash.com/400x400/?jaipur,interior" class="rounded shadow">
+      <img src="https://source.unsplash.com/400x400/?jaipur,heritage" class="rounded shadow">
+      <img src="https://source.unsplash.com/400x400/?jaipur,room" class="rounded shadow">
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities" class="bg-sandlight dark:bg-darknav py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-playfair mb-6">Services & Amenities</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="amenity-item">
+          <div class="icon">🌐</div>
+          <p>Free Wi-Fi</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon">🌳</div>
+          <p>Garden Courtyard</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon">🍽️</div>
+          <p>Breakfast Included</p>
+        </div>
+        <!-- more items... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 max-w-4xl mx-auto px-4">
+    <h3 class="text-3xl font-playfair mb-6 text-center">Contact & Booking</h3>
+    <form onsubmit="handleSubmit(event)" class="grid md:grid-cols-2 gap-4">
+      <input type="text" placeholder="Name" required class="p-3 rounded border">
+      <input type="email" placeholder="Email" required class="p-3 rounded border">
+      <textarea placeholder="Message" rows="5" required class="p-3 rounded border md:col-span-2"></textarea>
+      <button type="submit" class="btn-maroon md:col-span-2">Send Message</button>
+    </form>
+    <p class="mt-4 text-center text-gray-600 dark:text-gray-400">
+      Address: Jaipur, Rajasthan • Phone & Email on request
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-darknav text-center py-6">
+    <p>&copy; 2025 King Sukh Guest House. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"> </script>
 </body>
 </html>

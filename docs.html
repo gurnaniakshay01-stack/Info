@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Sukh Guest House Documentation</title>
+  <style>
+    /* Reset and base */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #2c3e50;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      color: #1d3557;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 4px solid #e63946;
+      padding-bottom: 0.25rem;
+    }
+
+    h2 {
+      color: #457b9d;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid #a8dadc;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #1d3557;
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+    }
+
+    p, ul, ol {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      color: #264653;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Colored badges for sections */
+    .badge {
+      display: inline-block;
+      background-color: #e63946;
+      color: white;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Code style */
+    code {
+      background-color: #a8dadc;
+      color: #1d3557;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 1rem;
+    }
+
+    /* Container styling */
+    .container {
+      max-width: 900px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 2rem 3rem;
+      margin: auto;
+    }
+
+    /* Link styling */
+    a {
+      color: #e63946;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Highlight important notes */
+    .note {
+      background: #f1faee;
+      border-left: 6px solid #1d3557;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0 2rem 0;
+      font-style: italic;
+      color: #264653;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>King Sukh Guest House Website Redesign Documentation</h1>
+
+    <h2>1. Project Scope</h2>
+    <p><span class="badge">Objective</span> Redesign the existing King Sukh Guest House website to improve aesthetics, user engagement, and responsiveness.</p>
+    <p><span class="badge">Key Goals</span></p>
+    <ul>
+      <li>Modernize the visual design with a clean and welcoming look.</li>
+      <li>Implement responsive design for seamless experience on all devices.</li>
+      <li>Include interactive elements like dark mode toggle and smooth navigation.</li>
+      <li>Maintain brand consistency with logo, colors, and theme.</li>
+    </ul>
+    <p><span class="badge">Features Delivered</span></p>
+    <ul>
+      <li>Responsive navigation with desktop and mobile menu.</li>
+      <li>Dark mode toggle button.</li>
+      <li>Hero section with background image and call-to-action button.</li>
+      <li>Room listings with images and descriptions.</li>
+      <li>Contact form with validation and submission feedback.</li>
+      <li>Footer with copyright.</li>
+    </ul>
+
+    <h2>2. Design Decisions</h2>
+    <ul>
+      <li><strong>Typeface:</strong> Used Google Fonts ‘Inter’ for a modern, readable look.</li>
+      <li><strong>Color Palette:</strong> Light theme with blues and grays, with a complementary dark mode palette using darker backgrounds and lighter text for eye comfort.</li>
+      <li><strong>Layout:</strong> 
+        <ul>
+          <li>Fixed header with navigation for easy access.</li>
+          <li>Grid-based room layout for clear visual hierarchy.</li>
+          <li>Spacious sections with padding for better readability.</li>
+        </ul>
+      </li>
+      <li><strong>Animations:</strong> Added subtle fade-in for hero section and hover effects for interactive elements to enhance user engagement.</li>
+      <li><strong>Mobile First:</strong> Used Tailwind CSS utility classes to ensure a responsive design that adapts to mobile screens and scales up for desktops.</li>
+    </ul>
+
+    <h2>3. Technical Details</h2>
+    <ul>
+      <li><strong>Tech Stack:</strong>
+        <ul>
+          <li>HTML5 semantic structure.</li>
+          <li>Tailwind CSS (via CDN) for styling.</li>
+          <li>Vanilla JavaScript for interactivity (dark mode toggle, mobile menu toggle).</li>
+        </ul>
+      </li>
+      <li><strong>Dark Mode Implementation:</strong> Custom CSS toggling <code>.dark</code> class on the <code>&lt;body&gt;</code> element with color overrides.</li>
+      <li><strong>Performance:</strong> Optimized images via Unsplash source URLs; minimal JS; CDN caching benefits.</li>
+      <li><strong>Accessibility:</strong> Buttons and links with clear labels; keyboard accessible menu toggles; responsive layout.</li>
+    </ul>
+
+    <h2>4. Maintenance &amp; Updates Instructions</h2>
+    <ul>
+      <li><strong>Adding Content:</strong> Update room cards and section text directly in <code>index.html</code>.</li>
+      <li><strong>Styling:</strong> Modify colors, fonts, or spacing in <code>style.css</code> or add Tailwind classes.</li>
+      <li><strong>JavaScript:</strong> Keep toggle functions in the <code>&lt;script&gt;</code> block in <code>index.html</code>.</li>
+      <li><strong>Deployment:</strong> Host static files on platforms like GitHub Pages, Netlify, or Vercel.</li>
+      <li><strong>Backups &amp; Version Control:</strong> Regularly backup files and use Git for version tracking.</li>
+    </ul>
+
+    <h2>5. Challenges &amp; Solutions</h2>
+    <ul>
+      <li><strong>Dark Mode Compatibility:</strong> Tailwind CDN doesn’t support dark mode natively, so manual CSS and JS toggle was implemented.</li>
+      <li><strong>Responsive Menu:</strong> Created simple JS toggle for mobile menu visibility.</li>
+      <li><strong>Performance Optimization:</strong> Used optimized image URLs and minimal JS.</li>
+      <li><strong>Accessibility:</strong> Added aria-labels and ensured keyboard usability.</li>
+    </ul>
+
+    <h2>6. Future Improvements (Optional)</h2>
+    <ul>
+      <li>Backend form submission integration.</li>
+      <li>Multilingual support.</li>
+      <li>Real-time booking API integration.</li>
+      <li>Testimonials or review section.</li>
+      <li>CSS preprocessors or build tools for scalability.</li>
+    </ul>
+
+    <div class="note">
+      <strong>Note:</strong> This documentation is intended to help developers and maintainers understand and update the King Sukh Guest House website efficiently.
+    </div>
+
+    <p style="text-align:center; font-weight:600; margin-top: 3rem;">
+      Thank you for reviewing the King Sukh Guest House website redesign project!
+    </p>
+  </div>
+</body>
+</html>
