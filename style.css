@@ -40,7 +40,98 @@ html {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
-  
+/* Fade In & Out */
+body {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease, background-color 1s, color 1s;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Dark Mode Base Styles */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Dark Mode Header/Footer */
+header, footer {
+  padding: 20px;
+  transition: background-color 1s, color 1s;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #555;
+}
+/* Scroll animation */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* social media */
+
+footer .socials {
+  display: flex;
+  justify-content: center;  /* Align center horizontally */
+  align-items: center;
+  gap: 25px;                /* Space between icons/links */
+  padding: 20px 0;
+}
+
+footer .socials a {
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #007bff; /* Or any highlight color you like */
+}
+
+/* Optional: if you're using icons */
+footer .socials i {
+  font-size: 20px;
+}
+
+
   /* Room Card Hover */
   .room-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
