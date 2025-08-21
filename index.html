@@ -29,8 +29,7 @@
       <a href="#rooms" class="block py-2">Rooms</a>
       <a href="#gallery" class="block py-2">Gallery</a>
       <a href="#contact" class="block py-2">Contact</a>
-      <button onclick="toggleDarkMode()" class="block w-full text-left py-2 border-t mt-2">Toggle Dark Mode</button>
-    </div>
+  </div>
   </header>
 
   <!-- Hero -->
@@ -47,12 +46,12 @@
   <!-- About -->
   <section id="about" class="py-16 max-w-5xl mx-auto px-4">
     <div class="md:flex items-center gap-6">
-      <div class="md:w-1/2">
+      <!-- <div class="md:w-1/2">
         <img src="asserts/out.jpg" alt="Guesthouse" class="rounded shadow-lg">
-      </div>
-      <div class="md:w-1/2">
-        <h3 class="text-3xl font-playfair mb-4">About Us</h3>
-        <h2>The Best Holidays Start Here! <hr> </h2>
+      </div> -->
+      <div class="md:w-4/2">
+        <h3 class="text-3xl font-playfair mb-4 text-center">About Us <hr> <br></h3>
+        <h2 class="text-3xl font-semibold">The Best Holidays Start Here! <br> <br></h2>
         <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
             Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay. <br><br>
         </p>
@@ -62,44 +61,76 @@
         <h4>
             <a href="tel:+911234567890"> Contact us: +91 1234567890 </a>
         </h4>
+              <div class="md:w-3/1">
+        <img src="asserts/out.jpg" alt="Guesthouse" class="h-full w-full">
+      </div>
       </div>
     </div>
   </section>
 
   <!-- Rooms -->
-  <section id="rooms" class="bg-sandlight dark:bg-darknav py-16">
+  <section id="rooms" class="py-16 max-w-5xl mx-auto px-4">
     <div class="max-w-6xl mx-auto px-4">
       <h3 class="text-3xl font-playfair text-center mb-10 section_subheader" >Our Rooms <hr> </h3>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Sample Room Card -->
-        <div class="room-card bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
-          <img src="https://source.unsplash.com/400x300/?hotelroom,jaipur" alt="Deluxe Room" class="w-full h-48 object-cover">
+        <div class="room-card bg-grey-700 dark:bg-gray-700 rounded-lg shadow-lg overflow-hiddenmt-4  text-gray-600 dark:text-gray-400">
+          <img src="asserts/small.jpg" alt="Deluxe Room" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h4 class="text-xl font-semibold">Deluxe Room</h4>
-            <p class="text-gray-600 dark:text-gray-300 mt-2">Queen bed, garden view, ₹1500/night</p>
-            <a href="#contact" class="btn-maroon mt-4 inline-block">Book Now</a>
+            <h4 class="text-xl font-semibold">Cozy Heaven Room <hr></h4>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.
+            </p>
+            <h5 class="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Starting From
+              <span>
+                ₹1000/Night
+              </span>
+            </h5>
+            <a href="#contact" class="btn-maroon mt-4 inline-block text-red-600">Book Now</a>
           </div>
         </div>
         <!-- repeat for other rooms -->
+        <!-- Seconnd Room Card -->
+        <div class="room-card bg-grey-700 dark:bg-gray-700 rounded-lg shadow-lg overflow-hiddenmt-4  text-gray-600 dark:text-gray-400">
+          <img src="asserts/large.jpg" alt="Deluxe Room" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold">Spacious Serenity Suite <hr></h4>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance</p>
+            <h5>
+              Starting From
+              <span>
+                ₹1500/Night
+              </span>
+            </h5>
+            <a href="#contact" class="btn-maroon mt-4 inline-block text-red-600">Book Now</a>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- Gallery -->
   <section id="gallery" class="py-16">
-    <h3 class="text-3xl font-playfair text-center mb-8">Gallery</h3>
+    <h3 class="text-3xl font-playfair text-center mb-8">Gallery <hr></h3>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
-      <img src="https://source.unsplash.com/400x400/?jaipur,garden" class="rounded shadow">
-      <img src="https://source.unsplash.com/400x400/?jaipur,interior" class="rounded shadow">
-      <img src="https://source.unsplash.com/400x400/?jaipur,heritage" class="rounded shadow">
-      <img src="https://source.unsplash.com/400x400/?jaipur,room" class="rounded shadow">
+      <img src="asserts/out.jpg" class="rounded shadow">
+      <img src="asserts/ayodhya.webp" class="rounded shadow">
+      <img src="asserts/large.jpg" class="rounded shadow">
+      <img src="asserts/palash.webp" class="rounded shadow">
+      <img src="asserts/small.jpg" class="rounded shadow">
+      <img src="asserts/baranti.webp" class="rounded shadow">
+      <img src="asserts/recep.jpg" class="rounded shadow">
+      <img src="asserts/flower.jpg" class="rounded shadow">
+      <img src="asserts/room1.jpg" class="rounded shadow">
+      <img src="asserts/mithonDam.webp" class="rounded shadow">
+
     </div>
   </section>
 
   <!-- Amenities -->
   <section id="amenities" class="bg-sandlight dark:bg-darknav py-16">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-playfair mb-6">Services & Amenities</h3>
+      <h3 class="text-3xl font-playfair mb-6">Services & Amenities <hr></h3>
       <div class="flex flex-wrap justify-center gap-6">
         <div class="amenity-item">
           <div class="icon">🌐</div>
@@ -120,7 +151,7 @@
 
   <!-- Contact -->
   <section id="contact" class="py-16 max-w-4xl mx-auto px-4">
-    <h3 class="text-3xl font-playfair mb-6 text-center">Contact & Booking</h3>
+    <h3 class="text-3xl font-playfair mb-6 text-center">Contact & Booking <hr></h3>
     <form onsubmit="handleSubmit(event)" class="grid md:grid-cols-2 gap-4">
       <input type="text" placeholder="Name" required class="p-3 rounded border">
       <input type="email" placeholder="Email" required class="p-3 rounded border">

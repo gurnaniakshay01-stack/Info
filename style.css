@@ -28,7 +28,7 @@ html {
     padding: 0.6rem 1.5rem;
     border-radius: 9999px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(219, 8, 8, 0.1);
     display: inline-block;
     text-align: center;
     cursor: pointer;
@@ -38,7 +38,7 @@ html {
   .btn-primary:hover {
     background: linear-gradient(to right, #2563eb, #1e40af);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(107, 30, 30, 0.288);
   }
 /* Fade In & Out */
 body {
@@ -83,8 +83,8 @@ body.dark footer {
 button {
   padding: 10px 20px;
   margin: 10px;
-  background: #333;
-  color: #fff;
+  background: #2e2626;
+  color: #faf8f8;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -213,4 +213,3 @@ footer .socials i {
   body.dark .btn-primary:hover {
     background: linear-gradient(to right, #1e40af, #1e3a8a);
   }
-  
